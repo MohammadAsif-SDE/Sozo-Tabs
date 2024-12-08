@@ -1,3 +1,4 @@
+**🌟 Coming Soon**
 # **Sozo Tabs - Your Smart Tab Saver** 🚀
 
 **Sozo Tabs** is a next-generation Chrome extension designed to revolutionize the way you manage your browsing experience. With its folder-like structure, AI-powered search, and seamless cloud synchronization, your tabs are always just a click away—organized, accessible, and portable.
@@ -46,12 +47,6 @@ Your data is safe with us. We use secure authentication protocols and store your
 
 ## **📢 Feedback & Support**
 We'd love to hear from you! Share your thoughts, feature requests, or bug reports at **[support@sozo-tabs.com](mailto:support@sozo-tabs.com)**.
-
----
-
-## **🌟 Coming Soon**
-- Tab sharing for collaborative projects.
-- Advanced AI filters for smarter search results.
 
 ---
 
