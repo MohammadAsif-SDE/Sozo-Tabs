@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tab Links Organizer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 0;
+      margin: 0;
+    }
+    .navbar {
+      background-color: #000000;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+    .navbar h1 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .navbar button {
+      background-color: #ffc209;
+      color: #000000;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-radius: 5px;
+    }
+    .navbar button:hover {
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+    }
+    #folders {
+      padding: 10px;
+    }
+    .session-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    .session {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  position: relative;
+}
+
+.session-left {
+  flex-grow: 1;
+}
+
+.session-name {
+  font-weight: bold;
+}
+
+.session-tabs {
+  margin-top: 8px;
+  color: gray;
+  display: block;
+}
+
+.session-subtitle {
+  margin-top: 8px;
+  color: gray;
+  display: none;
+}
+
+.session:hover .session-tabs {
+  display: none;
+}
+
+.session:hover .session-subtitle {
+  display: block;
+}
+
+    .session-actions {
+      display: flex;
+      align-items: center;
+    }
+    .action-icon {
+      margin-left: 10px;
+      cursor: pointer;
+      position: relative;
+    }
+    .action-text {
+      display: none;
+      position: absolute;
+      top: -20px;
+      left: 0;
+      background-color: #000;
+      color: #fff;
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-size: 12px;
+    }
+    .action-icon:hover .action-text {
+      display: block;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <h1>Tabs For Later</h1>
+    <button id="showTabsButton">Save</button>
+  </div>
+  <div id="folders" class="session-list"></div>
+  <div id="createFolder" style="display: none;">
+    <input type="text" id="folderName" placeholder="Enter folder name">
+    <button id="saveFolder" class="button">Save Links to Folder</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
