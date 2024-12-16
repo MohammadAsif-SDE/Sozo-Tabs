@@ -24,4 +24,3 @@ chrome.runtime.onInstalled.addListener(() => {
       });
     }
   });
-  

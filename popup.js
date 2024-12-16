@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const foldersDiv = document.getElementById('folders');
     const showTabsButton = document.getElementById('showTabsButton');
+    const openAllButton = document.createElement('button');
+    openAllButton.textContent = 'Open All Links';
   
     function displayFolders() {
         chrome.storage.local.get({ folders: [] }, (result) => {
@@ -140,6 +142,13 @@ document.addEventListener('DOMContentLoaded', () => {
       backButton.textContent = 'Back';
       backButton.addEventListener('click', displayFolders);
       foldersDiv.appendChild(backButton);
+  
+      openAllButton.addEventListener('click', () => {
+        links.forEach(link => {
+          window.open(link, '_blank');
+        });
+      });
+      foldersDiv.appendChild(openAllButton);
     }
   
     function saveLinks(folderIndex, links) {
@@ -172,4 +181,3 @@ document.addEventListener('DOMContentLoaded', () => {
   
     displayFolders();
   });
-  
